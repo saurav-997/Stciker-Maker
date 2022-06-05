@@ -11,7 +11,7 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate & UINavi
     
     @IBOutlet weak var emptyLabel: UILabel!
     var imagePicker = UIImagePickerController()
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         imagePicker.delegate = self
@@ -44,9 +44,9 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate & UINavi
                 indicatorView.stopAnimating()
                 indicatorView.removeFromSuperview()
                 vc.imageView.image = info[.originalImage] as? UIImage
+                print(info[.originalImage].debugDescription) as? UIImage
             }
         }
     }
-    
 }
 

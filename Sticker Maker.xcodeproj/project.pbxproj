@@ -7,6 +7,24 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E04ECEF0284B7DBE0037E049 /* StickerPack.swift in Sources */ = {isa = PBXBuildFile; fileRef = E04ECEDD284B7DBE0037E049 /* StickerPack.swift */; };
+		E04ECEF1284B7DBE0037E049 /* Interoperability.swift in Sources */ = {isa = PBXBuildFile; fileRef = E04ECEDE284B7DBE0037E049 /* Interoperability.swift */; };
+		E04ECEF2284B7DBE0037E049 /* Limits.swift in Sources */ = {isa = PBXBuildFile; fileRef = E04ECEDF284B7DBE0037E049 /* Limits.swift */; };
+		E04ECEF3284B7DBE0037E049 /* Sticker.swift in Sources */ = {isa = PBXBuildFile; fileRef = E04ECEE0284B7DBE0037E049 /* Sticker.swift */; };
+		E04ECEF4284B7DBE0037E049 /* StickerPackManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E04ECEE1284B7DBE0037E049 /* StickerPackManager.swift */; };
+		E04ECEF5284B7DBE0037E049 /* WebPManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E04ECEE2284B7DBE0037E049 /* WebPManager.swift */; };
+		E04ECEF6284B7DBE0037E049 /* ImageData.swift in Sources */ = {isa = PBXBuildFile; fileRef = E04ECEE3284B7DBE0037E049 /* ImageData.swift */; };
+		E04ECEF7284B7DBE0037E049 /* YYSpriteSheetImage.m in Sources */ = {isa = PBXBuildFile; fileRef = E04ECEE8284B7DBE0037E049 /* YYSpriteSheetImage.m */; };
+		E04ECEF8284B7DBE0037E049 /* YYImage.m in Sources */ = {isa = PBXBuildFile; fileRef = E04ECEEA284B7DBE0037E049 /* YYImage.m */; };
+		E04ECEF9284B7DBE0037E049 /* YYImageCoder.m in Sources */ = {isa = PBXBuildFile; fileRef = E04ECEEB284B7DBE0037E049 /* YYImageCoder.m */; };
+		E04ECEFA284B7DBE0037E049 /* YYFrameImage.m in Sources */ = {isa = PBXBuildFile; fileRef = E04ECEEC284B7DBE0037E049 /* YYFrameImage.m */; };
+		E04ECEFB284B7DBE0037E049 /* YYAnimatedImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = E04ECEED284B7DBE0037E049 /* YYAnimatedImageView.m */; };
+		E0BC0A9E284B825A000C61BF /* tray_Cuppy.png in Resources */ = {isa = PBXBuildFile; fileRef = E0BC0A9D284B825A000C61BF /* tray_Cuppy.png */; };
+		E0BC0A9F284B8352000C61BF /* WebP.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E04ECEDB284B7DBE0037E049 /* WebP.framework */; };
+		E0BC0AA6284BAD77000C61BF /* 14_CatOnTheLaptop.webp in Resources */ = {isa = PBXBuildFile; fileRef = E0BC0AA4284BAD77000C61BF /* 14_CatOnTheLaptop.webp */; };
+		E0BC0AA7284BAD77000C61BF /* 01_Cuppy_smile.png in Resources */ = {isa = PBXBuildFile; fileRef = E0BC0AA5284BAD77000C61BF /* 01_Cuppy_smile.png */; };
+		E0BC0AAB284BAFAB000C61BF /* 01_SendingLove.webp in Resources */ = {isa = PBXBuildFile; fileRef = E0BC0AA9284BAFAB000C61BF /* 01_SendingLove.webp */; };
+		E0BC0AAC284BAFAB000C61BF /* 15_WorkingFromHomeF.webp in Resources */ = {isa = PBXBuildFile; fileRef = E0BC0AAA284BAFAB000C61BF /* 15_WorkingFromHomeF.webp */; };
 		E0F44FE72826B859009898CF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0F44FE62826B859009898CF /* AppDelegate.swift */; };
 		E0F44FE92826B859009898CF /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0F44FE82826B859009898CF /* SceneDelegate.swift */; };
 		E0F44FEB2826B859009898CF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0F44FEA2826B859009898CF /* ViewController.swift */; };
@@ -17,6 +35,30 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		E04ECEDB284B7DBE0037E049 /* WebP.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = WebP.framework; sourceTree = SOURCE_ROOT; };
+		E04ECEDD284B7DBE0037E049 /* StickerPack.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StickerPack.swift; sourceTree = "<group>"; };
+		E04ECEDE284B7DBE0037E049 /* Interoperability.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Interoperability.swift; sourceTree = "<group>"; };
+		E04ECEDF284B7DBE0037E049 /* Limits.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Limits.swift; sourceTree = "<group>"; };
+		E04ECEE0284B7DBE0037E049 /* Sticker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Sticker.swift; sourceTree = "<group>"; };
+		E04ECEE1284B7DBE0037E049 /* StickerPackManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StickerPackManager.swift; sourceTree = "<group>"; };
+		E04ECEE2284B7DBE0037E049 /* WebPManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebPManager.swift; sourceTree = "<group>"; };
+		E04ECEE3284B7DBE0037E049 /* ImageData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageData.swift; sourceTree = "<group>"; };
+		E04ECEE5284B7DBE0037E049 /* YYImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YYImage.h; sourceTree = "<group>"; };
+		E04ECEE6284B7DBE0037E049 /* YYImageCoder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YYImageCoder.h; sourceTree = "<group>"; };
+		E04ECEE7284B7DBE0037E049 /* YYFrameImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YYFrameImage.h; sourceTree = "<group>"; };
+		E04ECEE8284B7DBE0037E049 /* YYSpriteSheetImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YYSpriteSheetImage.m; sourceTree = "<group>"; };
+		E04ECEE9284B7DBE0037E049 /* YYAnimatedImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YYAnimatedImageView.h; sourceTree = "<group>"; };
+		E04ECEEA284B7DBE0037E049 /* YYImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YYImage.m; sourceTree = "<group>"; };
+		E04ECEEB284B7DBE0037E049 /* YYImageCoder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YYImageCoder.m; sourceTree = "<group>"; };
+		E04ECEEC284B7DBE0037E049 /* YYFrameImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YYFrameImage.m; sourceTree = "<group>"; };
+		E04ECEED284B7DBE0037E049 /* YYAnimatedImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YYAnimatedImageView.m; sourceTree = "<group>"; };
+		E04ECEEE284B7DBE0037E049 /* YYSpriteSheetImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YYSpriteSheetImage.h; sourceTree = "<group>"; };
+		E0A90F63284B7BD600CB5A16 /* StickerMaker-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "StickerMaker-Bridging-Header.h"; sourceTree = "<group>"; };
+		E0BC0A9D284B825A000C61BF /* tray_Cuppy.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tray_Cuppy.png; sourceTree = "<group>"; };
+		E0BC0AA4284BAD77000C61BF /* 14_CatOnTheLaptop.webp */ = {isa = PBXFileReference; lastKnownFileType = file; path = 14_CatOnTheLaptop.webp; sourceTree = "<group>"; };
+		E0BC0AA5284BAD77000C61BF /* 01_Cuppy_smile.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 01_Cuppy_smile.png; sourceTree = "<group>"; };
+		E0BC0AA9284BAFAB000C61BF /* 01_SendingLove.webp */ = {isa = PBXFileReference; lastKnownFileType = file; path = 01_SendingLove.webp; sourceTree = "<group>"; };
+		E0BC0AAA284BAFAB000C61BF /* 15_WorkingFromHomeF.webp */ = {isa = PBXFileReference; lastKnownFileType = file; path = 15_WorkingFromHomeF.webp; sourceTree = "<group>"; };
 		E0F44FE32826B859009898CF /* Sticker Maker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Sticker Maker.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E0F44FE62826B859009898CF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E0F44FE82826B859009898CF /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -33,12 +75,55 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E0BC0A9F284B8352000C61BF /* WebP.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		E04ECEDC284B7DBE0037E049 /* WhatsAppClasses */ = {
+			isa = PBXGroup;
+			children = (
+				E04ECEDD284B7DBE0037E049 /* StickerPack.swift */,
+				E04ECEDE284B7DBE0037E049 /* Interoperability.swift */,
+				E04ECEDF284B7DBE0037E049 /* Limits.swift */,
+				E04ECEE0284B7DBE0037E049 /* Sticker.swift */,
+				E04ECEE1284B7DBE0037E049 /* StickerPackManager.swift */,
+				E04ECEE2284B7DBE0037E049 /* WebPManager.swift */,
+				E04ECEE3284B7DBE0037E049 /* ImageData.swift */,
+			);
+			path = WhatsAppClasses;
+			sourceTree = SOURCE_ROOT;
+		};
+		E04ECEE4284B7DBE0037E049 /* YY Classes */ = {
+			isa = PBXGroup;
+			children = (
+				E04ECEE5284B7DBE0037E049 /* YYImage.h */,
+				E04ECEE6284B7DBE0037E049 /* YYImageCoder.h */,
+				E04ECEE7284B7DBE0037E049 /* YYFrameImage.h */,
+				E04ECEE8284B7DBE0037E049 /* YYSpriteSheetImage.m */,
+				E04ECEE9284B7DBE0037E049 /* YYAnimatedImageView.h */,
+				E04ECEEA284B7DBE0037E049 /* YYImage.m */,
+				E04ECEEB284B7DBE0037E049 /* YYImageCoder.m */,
+				E04ECEEC284B7DBE0037E049 /* YYFrameImage.m */,
+				E04ECEED284B7DBE0037E049 /* YYAnimatedImageView.m */,
+				E04ECEEE284B7DBE0037E049 /* YYSpriteSheetImage.h */,
+			);
+			path = "YY Classes";
+			sourceTree = SOURCE_ROOT;
+		};
+		E0BC0AA3284BAC07000C61BF /* Image */ = {
+			isa = PBXGroup;
+			children = (
+				E0BC0AA5284BAD77000C61BF /* 01_Cuppy_smile.png */,
+				E0BC0AA4284BAD77000C61BF /* 14_CatOnTheLaptop.webp */,
+				E0BC0AA9284BAFAB000C61BF /* 01_SendingLove.webp */,
+				E0BC0AAA284BAFAB000C61BF /* 15_WorkingFromHomeF.webp */,
+			);
+			path = Image;
+			sourceTree = "<group>";
+		};
 		E0F44FDA2826B859009898CF = {
 			isa = PBXGroup;
 			children = (
@@ -58,14 +143,20 @@
 		E0F44FE52826B859009898CF /* Sticker Maker */ = {
 			isa = PBXGroup;
 			children = (
+				E0F44FF42826B85C009898CF /* Info.plist */,
 				E0F44FE62826B859009898CF /* AppDelegate.swift */,
 				E0F44FE82826B859009898CF /* SceneDelegate.swift */,
 				E0F44FEA2826B859009898CF /* ViewController.swift */,
 				E0F44FFA2826E389009898CF /* ImageViewController.swift */,
 				E0F44FEC2826B859009898CF /* Main.storyboard */,
-				E0F44FEF2826B85C009898CF /* Assets.xcassets */,
 				E0F44FF12826B85C009898CF /* LaunchScreen.storyboard */,
-				E0F44FF42826B85C009898CF /* Info.plist */,
+				E04ECEDC284B7DBE0037E049 /* WhatsAppClasses */,
+				E04ECEE4284B7DBE0037E049 /* YY Classes */,
+				E0A90F63284B7BD600CB5A16 /* StickerMaker-Bridging-Header.h */,
+				E0F44FEF2826B85C009898CF /* Assets.xcassets */,
+				E0BC0A9D284B825A000C61BF /* tray_Cuppy.png */,
+				E0BC0AA3284BAC07000C61BF /* Image */,
+				E04ECEDB284B7DBE0037E049 /* WebP.framework */,
 			);
 			path = "Sticker Maker";
 			sourceTree = "<group>";
@@ -128,7 +219,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E0BC0AA6284BAD77000C61BF /* 14_CatOnTheLaptop.webp in Resources */,
 				E0F44FF32826B85C009898CF /* LaunchScreen.storyboard in Resources */,
+				E0BC0AAB284BAFAB000C61BF /* 01_SendingLove.webp in Resources */,
+				E0BC0A9E284B825A000C61BF /* tray_Cuppy.png in Resources */,
+				E0BC0AA7284BAD77000C61BF /* 01_Cuppy_smile.png in Resources */,
+				E0BC0AAC284BAFAB000C61BF /* 15_WorkingFromHomeF.webp in Resources */,
 				E0F44FF02826B85C009898CF /* Assets.xcassets in Resources */,
 				E0F44FEE2826B859009898CF /* Main.storyboard in Resources */,
 			);
@@ -141,9 +237,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E04ECEF7284B7DBE0037E049 /* YYSpriteSheetImage.m in Sources */,
 				E0F44FEB2826B859009898CF /* ViewController.swift in Sources */,
+				E04ECEF1284B7DBE0037E049 /* Interoperability.swift in Sources */,
+				E04ECEFB284B7DBE0037E049 /* YYAnimatedImageView.m in Sources */,
+				E04ECEF8284B7DBE0037E049 /* YYImage.m in Sources */,
 				E0F44FE72826B859009898CF /* AppDelegate.swift in Sources */,
+				E04ECEF9284B7DBE0037E049 /* YYImageCoder.m in Sources */,
+				E04ECEFA284B7DBE0037E049 /* YYFrameImage.m in Sources */,
+				E04ECEF2284B7DBE0037E049 /* Limits.swift in Sources */,
 				E0F44FFB2826E389009898CF /* ImageViewController.swift in Sources */,
+				E04ECEF3284B7DBE0037E049 /* Sticker.swift in Sources */,
+				E04ECEF6284B7DBE0037E049 /* ImageData.swift in Sources */,
+				E04ECEF0284B7DBE0037E049 /* StickerPack.swift in Sources */,
+				E04ECEF5284B7DBE0037E049 /* WebPManager.swift in Sources */,
+				E04ECEF4284B7DBE0037E049 /* StickerPackManager.swift in Sources */,
 				E0F44FE92826B859009898CF /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -292,6 +400,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 22X52N9JSX;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Sticker Maker/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -307,6 +419,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.sh.Sticker-Maker";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "Sticker Maker/StickerMaker-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -320,6 +433,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 22X52N9JSX;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Sticker Maker/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -335,6 +452,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.sh.Sticker-Maker";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "Sticker Maker/StickerMaker-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

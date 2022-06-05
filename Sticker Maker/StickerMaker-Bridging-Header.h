@@ -5,8 +5,5 @@
 //  Created by Saurav Sharma on 04/06/22.
 //
 
-#ifndef StickerMaker_Bridging_Header_h
-#define StickerMaker_Bridging_Header_h
+#import "YYImage.h"
 
-
-#endif /* StickerMaker_Bridging_Header_h */
