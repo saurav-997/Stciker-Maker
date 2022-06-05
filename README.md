@@ -1,1 +1,1 @@
-# Stciker-Maker
+# Sticker-Maker
