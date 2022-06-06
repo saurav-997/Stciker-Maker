@@ -7,16 +7,16 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "9517AA5E-7B8A-438E-9A7E-CD1863CB92E0"
+            uuid = "85ECC28C-DED8-43ED-9504-B057C6333F42"
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "Sticker Maker/ViewController.swift"
+            filePath = "Sticker Maker/ImageViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "46"
-            endingLineNumber = "46"
-            landmarkName = "imagePickerController(_:didFinishPickingMediaWithInfo:)"
+            startingLineNumber = "45"
+            endingLineNumber = "45"
+            landmarkName = "createStcikerPack()"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>

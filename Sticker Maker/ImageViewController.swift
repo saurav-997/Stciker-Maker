@@ -7,6 +7,7 @@
 
 import Foundation
 import UIKit
+import libwebp
 
 class ImageViewController: UIViewController {
     @IBOutlet weak var imageView: UIImageView!
@@ -22,23 +23,28 @@ class ImageViewController: UIViewController {
             let stickerPack = try StickerPack(identifier: "com.sh.Sticker-Maker",
             name: "stickerMaker",
             publisher: "Saurav Sharma",
-            trayImageFileName: "tray_Cuppy.png", animatedStickerPack: true,
+            trayImageFileName: "tray_Cuppy.png", animatedStickerPack: false,
             publisherWebsite: nil,
             privacyPolicyWebsite: nil,
             licenseAgreementWebsite: nil)
             
-            try stickerPack.addSticker(contentsOfFile: "14_CatOnTheLaptop.webp", emojis: ["👍🏼","❤️","🤣"])
-            try stickerPack.addSticker(contentsOfFile: "01_SendingLove.webp", emojis: ["🪚","❤️","🤣"])
-            try stickerPack.addSticker(contentsOfFile: "15_WorkingFromHomeF.webp", emojis: ["👍🏼","👾","🤣"])
+//            try stickerPack.addSticker(contentsOfFile: "14_CatOnTheLaptop.webp", emojis: ["👍🏼","❤️","🤣"])
+////            try stickerPack.addSticker(contentsOfFile: "01_SendingLove.webp", emojis: ["🪚","❤️","🤣"])
+//            try stickerPack.addSticker(contentsOfFile: "15_WorkingFromHomeF.webp", emojis: ["👍🏼","👾","🤣"])
+//
+            let imgdata = ViewController.shared.sourceImg
+            try stickerPack.addSticker(imageData: imgdata, type: .webp, emojis: ["👍🏼","😍","🤣"])
+            try stickerPack.addSticker(imageData: imgdata, type: .webp, emojis: ["👍🏼","😍","🤣"])
+            try stickerPack.addSticker(imageData: imgdata, type: .webp, emojis: ["👍🏼","😍","🤣"])
             
             stickerPack.sendToWhatsApp { _ in
                 
             }
         }
-        catch{
-            print("error:-\(error.localizedDescription)")
+        catch {
+            print("error:- \(error.localizedDescription)")
         }
         
     }
-    
+   
 }

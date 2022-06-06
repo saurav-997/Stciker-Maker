@@ -19,6 +19,8 @@
 		E04ECEF9284B7DBE0037E049 /* YYImageCoder.m in Sources */ = {isa = PBXBuildFile; fileRef = E04ECEEB284B7DBE0037E049 /* YYImageCoder.m */; };
 		E04ECEFA284B7DBE0037E049 /* YYFrameImage.m in Sources */ = {isa = PBXBuildFile; fileRef = E04ECEEC284B7DBE0037E049 /* YYFrameImage.m */; };
 		E04ECEFB284B7DBE0037E049 /* YYAnimatedImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = E04ECEED284B7DBE0037E049 /* YYAnimatedImageView.m */; };
+		E086FB3C284BC2BA0002C68D /* SDWebImageWebPCoder in Frameworks */ = {isa = PBXBuildFile; productRef = E086FB3B284BC2BA0002C68D /* SDWebImageWebPCoder */; };
+		E086FB3F284BC3560002C68D /* SDWebImage in Frameworks */ = {isa = PBXBuildFile; productRef = E086FB3E284BC3560002C68D /* SDWebImage */; };
 		E0BC0A9E284B825A000C61BF /* tray_Cuppy.png in Resources */ = {isa = PBXBuildFile; fileRef = E0BC0A9D284B825A000C61BF /* tray_Cuppy.png */; };
 		E0BC0A9F284B8352000C61BF /* WebP.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E04ECEDB284B7DBE0037E049 /* WebP.framework */; };
 		E0BC0AA6284BAD77000C61BF /* 14_CatOnTheLaptop.webp in Resources */ = {isa = PBXBuildFile; fileRef = E0BC0AA4284BAD77000C61BF /* 14_CatOnTheLaptop.webp */; };
@@ -75,6 +77,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E086FB3F284BC3560002C68D /* SDWebImage in Frameworks */,
+				E086FB3C284BC2BA0002C68D /* SDWebImageWebPCoder in Frameworks */,
 				E0BC0A9F284B8352000C61BF /* WebP.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -177,6 +181,10 @@
 			dependencies = (
 			);
 			name = "Sticker Maker";
+			packageProductDependencies = (
+				E086FB3B284BC2BA0002C68D /* SDWebImageWebPCoder */,
+				E086FB3E284BC3560002C68D /* SDWebImage */,
+			);
 			productName = "Sticker Maker";
 			productReference = E0F44FE32826B859009898CF /* Sticker Maker.app */;
 			productType = "com.apple.product-type.application";
@@ -205,6 +213,10 @@
 				Base,
 			);
 			mainGroup = E0F44FDA2826B859009898CF;
+			packageReferences = (
+				E086FB3A284BC2BA0002C68D /* XCRemoteSwiftPackageReference "SDWebImageWebPCoder" */,
+				E086FB3D284BC3560002C68D /* XCRemoteSwiftPackageReference "SDWebImage" */,
+			);
 			productRefGroup = E0F44FE42826B859009898CF /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -480,6 +492,38 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		E086FB3A284BC2BA0002C68D /* XCRemoteSwiftPackageReference "SDWebImageWebPCoder" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SDWebImage/SDWebImageWebPCoder.git";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+		E086FB3D284BC3560002C68D /* XCRemoteSwiftPackageReference "SDWebImage" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SDWebImage/SDWebImage.git";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		E086FB3B284BC2BA0002C68D /* SDWebImageWebPCoder */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E086FB3A284BC2BA0002C68D /* XCRemoteSwiftPackageReference "SDWebImageWebPCoder" */;
+			productName = SDWebImageWebPCoder;
+		};
+		E086FB3E284BC3560002C68D /* SDWebImage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E086FB3D284BC3560002C68D /* XCRemoteSwiftPackageReference "SDWebImage" */;
+			productName = SDWebImage;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = E0F44FDB2826B859009898CF /* Project object */;
 }
