@@ -66,10 +66,7 @@ class MainViewController: UIViewController, UIImagePickerControllerDelegate & UI
         }
     }
 }
-/*Auth.auth().signIn(withEmail: email, password: password) { [weak self] authResult, error in
- guard let strongSelf = self else { return }
- // ...
-}*/
+
 extension UIImage {
     func resized(to size: CGSize) -> UIImage {
         return UIGraphicsImageRenderer(size: size).image { _ in

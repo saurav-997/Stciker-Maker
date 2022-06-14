@@ -7,7 +7,6 @@
 
 import Foundation
 import UIKit
-import libwebp
 
 class ImageViewController: UIViewController {
     @IBOutlet weak var imageView: UIImageView!
@@ -32,7 +31,7 @@ class ImageViewController: UIViewController {
 ////            try stickerPack.addSticker(contentsOfFile: "01_SendingLove.webp", emojis: ["🪚","❤️","🤣"])
 //            try stickerPack.addSticker(contentsOfFile: "15_WorkingFromHomeF.webp", emojis: ["👍🏼","👾","🤣"])
 //
-            let imgdata = ViewController.shared.sourceImg
+            let imgdata = MainViewController.shared.sourceImg
             try stickerPack.addSticker(imageData: imgdata, type: .webp, emojis: ["👍🏼","😍","🤣"])
             try stickerPack.addSticker(imageData: imgdata, type: .webp, emojis: ["👍🏼","😍","🤣"])
             try stickerPack.addSticker(imageData: imgdata, type: .webp, emojis: ["👍🏼","😍","🤣"])

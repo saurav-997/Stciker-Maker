@@ -2,5 +2,5 @@
 # platform :ios, '9.0'
 
 target 'Sticker Maker' do
-	pod 'iOS-WebP'
+	pod 'IQKeyboardManagerSwift'
 end

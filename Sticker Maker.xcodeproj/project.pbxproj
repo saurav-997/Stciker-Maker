@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E02936CC2858CB12006D5A0D /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E02936CB2858CB12006D5A0D /* LoginViewController.swift */; };
+		E02936CF2858D2D7006D5A0D /* IQKeyboardManagerSwift in Frameworks */ = {isa = PBXBuildFile; productRef = E02936CE2858D2D7006D5A0D /* IQKeyboardManagerSwift */; };
+		E02936D22858D63C006D5A0D /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = E02936D12858D63C006D5A0D /* FirebaseAuth */; };
+		E029463028578FA200D6DC70 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = E029462F28578FA200D6DC70 /* GoogleService-Info.plist */; };
+		E02946332857903800D6DC70 /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = E02946322857903800D6DC70 /* FirebaseAnalytics */; };
+		E02946352857903800D6DC70 /* FirebaseAnalyticsWithoutAdIdSupport in Frameworks */ = {isa = PBXBuildFile; productRef = E02946342857903800D6DC70 /* FirebaseAnalyticsWithoutAdIdSupport */; };
 		E04ECEF0284B7DBE0037E049 /* StickerPack.swift in Sources */ = {isa = PBXBuildFile; fileRef = E04ECEDD284B7DBE0037E049 /* StickerPack.swift */; };
 		E04ECEF1284B7DBE0037E049 /* Interoperability.swift in Sources */ = {isa = PBXBuildFile; fileRef = E04ECEDE284B7DBE0037E049 /* Interoperability.swift */; };
 		E04ECEF2284B7DBE0037E049 /* Limits.swift in Sources */ = {isa = PBXBuildFile; fileRef = E04ECEDF284B7DBE0037E049 /* Limits.swift */; };
@@ -19,24 +25,40 @@
 		E04ECEF9284B7DBE0037E049 /* YYImageCoder.m in Sources */ = {isa = PBXBuildFile; fileRef = E04ECEEB284B7DBE0037E049 /* YYImageCoder.m */; };
 		E04ECEFA284B7DBE0037E049 /* YYFrameImage.m in Sources */ = {isa = PBXBuildFile; fileRef = E04ECEEC284B7DBE0037E049 /* YYFrameImage.m */; };
 		E04ECEFB284B7DBE0037E049 /* YYAnimatedImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = E04ECEED284B7DBE0037E049 /* YYAnimatedImageView.m */; };
-		E086FB3C284BC2BA0002C68D /* SDWebImageWebPCoder in Frameworks */ = {isa = PBXBuildFile; productRef = E086FB3B284BC2BA0002C68D /* SDWebImageWebPCoder */; };
-		E086FB3F284BC3560002C68D /* SDWebImage in Frameworks */ = {isa = PBXBuildFile; productRef = E086FB3E284BC3560002C68D /* SDWebImage */; };
 		E0BC0A9E284B825A000C61BF /* tray_Cuppy.png in Resources */ = {isa = PBXBuildFile; fileRef = E0BC0A9D284B825A000C61BF /* tray_Cuppy.png */; };
 		E0BC0A9F284B8352000C61BF /* WebP.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E04ECEDB284B7DBE0037E049 /* WebP.framework */; };
 		E0BC0AA6284BAD77000C61BF /* 14_CatOnTheLaptop.webp in Resources */ = {isa = PBXBuildFile; fileRef = E0BC0AA4284BAD77000C61BF /* 14_CatOnTheLaptop.webp */; };
 		E0BC0AA7284BAD77000C61BF /* 01_Cuppy_smile.png in Resources */ = {isa = PBXBuildFile; fileRef = E0BC0AA5284BAD77000C61BF /* 01_Cuppy_smile.png */; };
 		E0BC0AAB284BAFAB000C61BF /* 01_SendingLove.webp in Resources */ = {isa = PBXBuildFile; fileRef = E0BC0AA9284BAFAB000C61BF /* 01_SendingLove.webp */; };
 		E0BC0AAC284BAFAB000C61BF /* 15_WorkingFromHomeF.webp in Resources */ = {isa = PBXBuildFile; fileRef = E0BC0AAA284BAFAB000C61BF /* 15_WorkingFromHomeF.webp */; };
+		E0D1080F284E6714006303AD /* Hero in Frameworks */ = {isa = PBXBuildFile; productRef = E0D1080E284E6714006303AD /* Hero */; };
+		E0D10810284E6A38006303AD /* Hero in Embed Frameworks */ = {isa = PBXBuildFile; productRef = E0D1080E284E6714006303AD /* Hero */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
 		E0F44FE72826B859009898CF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0F44FE62826B859009898CF /* AppDelegate.swift */; };
 		E0F44FE92826B859009898CF /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0F44FE82826B859009898CF /* SceneDelegate.swift */; };
-		E0F44FEB2826B859009898CF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0F44FEA2826B859009898CF /* ViewController.swift */; };
+		E0F44FEB2826B859009898CF /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0F44FEA2826B859009898CF /* MainViewController.swift */; };
 		E0F44FEE2826B859009898CF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E0F44FEC2826B859009898CF /* Main.storyboard */; };
 		E0F44FF02826B85C009898CF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E0F44FEF2826B85C009898CF /* Assets.xcassets */; };
 		E0F44FF32826B85C009898CF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E0F44FF12826B85C009898CF /* LaunchScreen.storyboard */; };
 		E0F44FFB2826E389009898CF /* ImageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0F44FFA2826E389009898CF /* ImageViewController.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		E0D10811284E6A38006303AD /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				E0D10810284E6A38006303AD /* Hero in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		E02936CB2858CB12006D5A0D /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		E029462F28578FA200D6DC70 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		E04ECEDB284B7DBE0037E049 /* WebP.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = WebP.framework; sourceTree = SOURCE_ROOT; };
 		E04ECEDD284B7DBE0037E049 /* StickerPack.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StickerPack.swift; sourceTree = "<group>"; };
 		E04ECEDE284B7DBE0037E049 /* Interoperability.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Interoperability.swift; sourceTree = "<group>"; };
@@ -64,7 +86,7 @@
 		E0F44FE32826B859009898CF /* Sticker Maker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Sticker Maker.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E0F44FE62826B859009898CF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E0F44FE82826B859009898CF /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		E0F44FEA2826B859009898CF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		E0F44FEA2826B859009898CF /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		E0F44FED2826B859009898CF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		E0F44FEF2826B85C009898CF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E0F44FF22826B85C009898CF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -77,9 +99,12 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E086FB3F284BC3560002C68D /* SDWebImage in Frameworks */,
-				E086FB3C284BC2BA0002C68D /* SDWebImageWebPCoder in Frameworks */,
+				E02936CF2858D2D7006D5A0D /* IQKeyboardManagerSwift in Frameworks */,
+				E02936D22858D63C006D5A0D /* FirebaseAuth in Frameworks */,
+				E0D1080F284E6714006303AD /* Hero in Frameworks */,
 				E0BC0A9F284B8352000C61BF /* WebP.framework in Frameworks */,
+				E02946332857903800D6DC70 /* FirebaseAnalytics in Frameworks */,
+				E02946352857903800D6DC70 /* FirebaseAnalyticsWithoutAdIdSupport in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -148,15 +173,17 @@
 			isa = PBXGroup;
 			children = (
 				E0F44FF42826B85C009898CF /* Info.plist */,
+				E029462F28578FA200D6DC70 /* GoogleService-Info.plist */,
 				E0F44FE62826B859009898CF /* AppDelegate.swift */,
 				E0F44FE82826B859009898CF /* SceneDelegate.swift */,
-				E0F44FEA2826B859009898CF /* ViewController.swift */,
+				E0F44FEA2826B859009898CF /* MainViewController.swift */,
 				E0F44FFA2826E389009898CF /* ImageViewController.swift */,
+				E02936CB2858CB12006D5A0D /* LoginViewController.swift */,
 				E0F44FEC2826B859009898CF /* Main.storyboard */,
 				E0F44FF12826B85C009898CF /* LaunchScreen.storyboard */,
+				E0A90F63284B7BD600CB5A16 /* StickerMaker-Bridging-Header.h */,
 				E04ECEDC284B7DBE0037E049 /* WhatsAppClasses */,
 				E04ECEE4284B7DBE0037E049 /* YY Classes */,
-				E0A90F63284B7BD600CB5A16 /* StickerMaker-Bridging-Header.h */,
 				E0F44FEF2826B85C009898CF /* Assets.xcassets */,
 				E0BC0A9D284B825A000C61BF /* tray_Cuppy.png */,
 				E0BC0AA3284BAC07000C61BF /* Image */,
@@ -175,6 +202,7 @@
 				E0F44FDF2826B859009898CF /* Sources */,
 				E0F44FE02826B859009898CF /* Frameworks */,
 				E0F44FE12826B859009898CF /* Resources */,
+				E0D10811284E6A38006303AD /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -182,8 +210,11 @@
 			);
 			name = "Sticker Maker";
 			packageProductDependencies = (
-				E086FB3B284BC2BA0002C68D /* SDWebImageWebPCoder */,
-				E086FB3E284BC3560002C68D /* SDWebImage */,
+				E0D1080E284E6714006303AD /* Hero */,
+				E02946322857903800D6DC70 /* FirebaseAnalytics */,
+				E02946342857903800D6DC70 /* FirebaseAnalyticsWithoutAdIdSupport */,
+				E02936CE2858D2D7006D5A0D /* IQKeyboardManagerSwift */,
+				E02936D12858D63C006D5A0D /* FirebaseAuth */,
 			);
 			productName = "Sticker Maker";
 			productReference = E0F44FE32826B859009898CF /* Sticker Maker.app */;
@@ -214,8 +245,10 @@
 			);
 			mainGroup = E0F44FDA2826B859009898CF;
 			packageReferences = (
-				E086FB3A284BC2BA0002C68D /* XCRemoteSwiftPackageReference "SDWebImageWebPCoder" */,
-				E086FB3D284BC3560002C68D /* XCRemoteSwiftPackageReference "SDWebImage" */,
+				E0D1080D284E6714006303AD /* XCRemoteSwiftPackageReference "Hero" */,
+				E02946312857903800D6DC70 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+				E02936CD2858D2D7006D5A0D /* XCRemoteSwiftPackageReference "IQKeyboardManager" */,
+				E02936D02858D63C006D5A0D /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
 			);
 			productRefGroup = E0F44FE42826B859009898CF /* Products */;
 			projectDirPath = "";
@@ -233,6 +266,7 @@
 			files = (
 				E0BC0AA6284BAD77000C61BF /* 14_CatOnTheLaptop.webp in Resources */,
 				E0F44FF32826B85C009898CF /* LaunchScreen.storyboard in Resources */,
+				E029463028578FA200D6DC70 /* GoogleService-Info.plist in Resources */,
 				E0BC0AAB284BAFAB000C61BF /* 01_SendingLove.webp in Resources */,
 				E0BC0A9E284B825A000C61BF /* tray_Cuppy.png in Resources */,
 				E0BC0AA7284BAD77000C61BF /* 01_Cuppy_smile.png in Resources */,
@@ -250,7 +284,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E04ECEF7284B7DBE0037E049 /* YYSpriteSheetImage.m in Sources */,
-				E0F44FEB2826B859009898CF /* ViewController.swift in Sources */,
+				E0F44FEB2826B859009898CF /* MainViewController.swift in Sources */,
 				E04ECEF1284B7DBE0037E049 /* Interoperability.swift in Sources */,
 				E04ECEFB284B7DBE0037E049 /* YYAnimatedImageView.m in Sources */,
 				E04ECEF8284B7DBE0037E049 /* YYImage.m in Sources */,
@@ -262,6 +296,7 @@
 				E04ECEF3284B7DBE0037E049 /* Sticker.swift in Sources */,
 				E04ECEF6284B7DBE0037E049 /* ImageData.swift in Sources */,
 				E04ECEF0284B7DBE0037E049 /* StickerPack.swift in Sources */,
+				E02936CC2858CB12006D5A0D /* LoginViewController.swift in Sources */,
 				E04ECEF5284B7DBE0037E049 /* WebPManager.swift in Sources */,
 				E04ECEF4284B7DBE0037E049 /* StickerPackManager.swift in Sources */,
 				E0F44FE92826B859009898CF /* SceneDelegate.swift in Sources */,
@@ -494,34 +529,65 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		E086FB3A284BC2BA0002C68D /* XCRemoteSwiftPackageReference "SDWebImageWebPCoder" */ = {
+		E02936CD2858D2D7006D5A0D /* XCRemoteSwiftPackageReference "IQKeyboardManager" */ = {
 			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/SDWebImage/SDWebImageWebPCoder.git";
+			repositoryURL = "https://github.com/hackiftekhar/IQKeyboardManager.git";
 			requirement = {
 				branch = master;
 				kind = branch;
 			};
 		};
-		E086FB3D284BC3560002C68D /* XCRemoteSwiftPackageReference "SDWebImage" */ = {
+		E02936D02858D63C006D5A0D /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
 			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/SDWebImage/SDWebImage.git";
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
 			requirement = {
-				branch = master;
-				kind = branch;
+				kind = upToNextMajorVersion;
+				minimumVersion = 9.0.0;
+			};
+		};
+		E02946312857903800D6DC70 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 9.0.0;
+			};
+		};
+		E0D1080D284E6714006303AD /* XCRemoteSwiftPackageReference "Hero" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/HeroTransitions/Hero.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		E086FB3B284BC2BA0002C68D /* SDWebImageWebPCoder */ = {
+		E02936CE2858D2D7006D5A0D /* IQKeyboardManagerSwift */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = E086FB3A284BC2BA0002C68D /* XCRemoteSwiftPackageReference "SDWebImageWebPCoder" */;
-			productName = SDWebImageWebPCoder;
+			package = E02936CD2858D2D7006D5A0D /* XCRemoteSwiftPackageReference "IQKeyboardManager" */;
+			productName = IQKeyboardManagerSwift;
 		};
-		E086FB3E284BC3560002C68D /* SDWebImage */ = {
+		E02936D12858D63C006D5A0D /* FirebaseAuth */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = E086FB3D284BC3560002C68D /* XCRemoteSwiftPackageReference "SDWebImage" */;
-			productName = SDWebImage;
+			package = E02946312857903800D6DC70 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAuth;
+		};
+		E02946322857903800D6DC70 /* FirebaseAnalytics */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E02946312857903800D6DC70 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAnalytics;
+		};
+		E02946342857903800D6DC70 /* FirebaseAnalyticsWithoutAdIdSupport */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E02946312857903800D6DC70 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAnalyticsWithoutAdIdSupport;
+		};
+		E0D1080E284E6714006303AD /* Hero */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E0D1080D284E6714006303AD /* XCRemoteSwiftPackageReference "Hero" */;
+			productName = Hero;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
