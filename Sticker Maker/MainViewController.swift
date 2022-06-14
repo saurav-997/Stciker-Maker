@@ -6,14 +6,14 @@
 //
 
 import UIKit
-import SDWebImage
+import Hero
 
-class ViewController: UIViewController, UIImagePickerControllerDelegate & UINavigationControllerDelegate {
+class MainViewController: UIViewController, UIImagePickerControllerDelegate & UINavigationControllerDelegate {
     
     @IBOutlet weak var emptyLabel: UILabel!
     
     var imagePicker = UIImagePickerController()
-    static let shared = ViewController()
+    static let shared = MainViewController()
     var sourceImg = Data()
     
     override func viewDidLoad()
@@ -43,27 +43,33 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate & UINavi
         self.view.addSubview(indicatorView)
         indicatorView.startAnimating()
         self.dismiss(animated: true) {
+            indicatorView.stopAnimating()
+            indicatorView.removeFromSuperview()
             let storyboard = UIStoryboard(name: "Main", bundle: nil)
             let vc = storyboard.instantiateViewController(identifier: "imageStoryboard") as! ImageViewController
             vc.modalPresentationStyle = .fullScreen
-            vc.modalTransitionStyle = .coverVertical
+            //vc.modalTransitionStyle = .coverVertical
+            vc.hero.modalAnimationType = .pull(direction: .right) // to do hero
+            vc.view.addSubview(indicatorView)
+            indicatorView.startAnimating()
             self.present(vc, animated: true) {
-                indicatorView.stopAnimating()
-                indicatorView.removeFromSuperview()
-                vc.imageView.image = info[.originalImage] as? UIImage
                 let image = info[.originalImage] as? UIImage
-                let data = image?.pngData()
-                if let image_download = UIImage(data: data!) {
+                if let image_download = image {
                     let resizedImage = image_download.resized(to: CGSize(width: 170.66, height: 170.66))
                     let webp = YYCGImageCreateEncodedWebPData(resizedImage.cgImage!, false, 1.0, 6, .icon)
-//                    let photo:Data = image_download.sd_imageData(as: SDImageFormat.webP,compressionQuality: 0.5)
-                    ViewController.shared.sourceImg = webp?.takeUnretainedValue() as! Data
+                    MainViewController.shared.sourceImg = webp?.takeUnretainedValue() as! Data
+                    indicatorView.stopAnimating()
+                    indicatorView.removeFromSuperview()
+                    vc.imageView.image = image
                 }
             }
         }
     }
 }
-
+/*Auth.auth().signIn(withEmail: email, password: password) { [weak self] authResult, error in
+ guard let strongSelf = self else { return }
+ // ...
+}*/
 extension UIImage {
     func resized(to size: CGSize) -> UIImage {
         return UIGraphicsImageRenderer(size: size).image { _ in
