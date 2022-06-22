@@ -73,15 +73,6 @@
       }
     },
     {
-      "identity" : "hero",
-      "kind" : "remoteSourceControl",
-      "location" : "https://github.com/HeroTransitions/Hero.git",
-      "state" : {
-        "revision" : "efa709686035831b23b7bf58f652b0c4b892aa1d",
-        "version" : "1.6.1"
-      }
-    },
-    {
       "identity" : "iqkeyboardmanager",
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/hackiftekhar/IQKeyboardManager.git",

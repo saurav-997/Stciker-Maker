@@ -59,7 +59,7 @@ class LoginViewController: UIViewController {
                     else {
                         self.loadingView.stopAnimating()
                         self.loadingView.removeFromSuperview()
-                        self.performSegue(withIdentifier: "showMainVC", sender: nil)
+                        self.performSegue(withIdentifier: "loginMainVC", sender: nil)
                     }
                 }
             }
@@ -67,6 +67,13 @@ class LoginViewController: UIViewController {
         }
         else { showAlert(titleText: "Email",messageText: "Please enter your Email.") }
     }
+    
+    @IBAction func signupAction(_ sender: Any)
+    {
+        self.performSegue(withIdentifier: "showSignup", sender: nil)
+    }
+    
+    
 }
 extension LoginViewController {
     fileprivate func showAlert(titleText: String, messageText: String){

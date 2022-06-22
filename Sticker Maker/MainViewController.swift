@@ -6,11 +6,11 @@
 //
 
 import UIKit
-import Hero
 
 class MainViewController: UIViewController, UIImagePickerControllerDelegate & UINavigationControllerDelegate {
     
     @IBOutlet weak var emptyLabel: UILabel!
+    @IBOutlet weak var tableView: UITableView!
     
     var imagePicker = UIImagePickerController()
     static let shared = MainViewController()
@@ -19,7 +19,12 @@ class MainViewController: UIViewController, UIImagePickerControllerDelegate & UI
     override func viewDidLoad()
     {
         super.viewDidLoad()
+        tableView.delegate = self
+        tableView.dataSource = self
+        tableView.separatorStyle = .none
         imagePicker.delegate = self
+        tableView.register(UINib(nibName: "StickerTableViewCell", bundle: nil), forCellReuseIdentifier: "stickerTableCell")
+        
     }
     
     @IBAction func createAction(_ sender: UIButton)
@@ -29,9 +34,15 @@ class MainViewController: UIViewController, UIImagePickerControllerDelegate & UI
             imagePicker.sourceType = .savedPhotosAlbum
             imagePicker.allowsEditing = false
             present(imagePicker, animated: true) {
-                self.emptyLabel.removeFromSuperview()
+                if let label = self.emptyLabel {
+                    label.removeFromSuperview()
+                }
             }
         }
+    }
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        tableView.reloadData()
     }
     
     func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any])
@@ -48,9 +59,9 @@ class MainViewController: UIViewController, UIImagePickerControllerDelegate & UI
             let storyboard = UIStoryboard(name: "Main", bundle: nil)
             let vc = storyboard.instantiateViewController(identifier: "imageStoryboard") as! ImageViewController
             vc.modalPresentationStyle = .fullScreen
-            //vc.modalTransitionStyle = .coverVertical
-            vc.hero.modalAnimationType = .pull(direction: .right) // to do hero
+            vc.modalTransitionStyle = .crossDissolve
             vc.view.addSubview(indicatorView)
+            vc.nextAction.isHidden = true
             indicatorView.startAnimating()
             self.present(vc, animated: true) {
                 let image = info[.originalImage] as? UIImage
@@ -73,4 +84,18 @@ extension UIImage {
             draw(in: CGRect(origin: .zero, size: size))
         }
     }
+}
+extension MainViewController: UITableViewDelegate, UITableViewDataSource {
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        let obj = ImageViewController.shared
+        return obj.stickerPack.count
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "stickerTableCell",for: indexPath) as! StickerTableViewCell
+        //cell.cellCollectionView.cellForItem(at: indexPath)?.addSubview(label)
+        return cell
+    }
+    
+    // to do collection view in tableview cell
 }

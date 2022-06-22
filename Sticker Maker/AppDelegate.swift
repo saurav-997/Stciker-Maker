@@ -9,6 +9,7 @@ import UIKit
 import Photos
 import FirebaseCore
 import IQKeyboardManagerSwift
+import CoreData
 
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -44,7 +45,28 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // If any sessions were discarded while the application was not running, this will be called shortly after application:didFinishLaunchingWithOptions.
         // Use this method to release any resources that were specific to the discarded scenes, as they will not return.
     }
-
-
+    
+    lazy var persisentContainer: NSPersistentContainer = {
+        let container = NSPersistentContainer(name: "StickerDatabase")
+        container.loadPersistentStores { (description, error) in
+            if let error = error as NSError? {
+                fatalError("Error -> \(error)")
+            }
+        }
+        return container
+    }()
+    func saveContext() {
+        let context = persisentContainer.viewContext
+        if context.hasChanges {
+            do {
+                try context.save()
+            }
+            catch{
+                let error = error as NSError?
+                fatalError("Error -> Saving DB \(String(describing: error?.localizedDescription))")
+            }
+        }
+    }
+    
 }
 
